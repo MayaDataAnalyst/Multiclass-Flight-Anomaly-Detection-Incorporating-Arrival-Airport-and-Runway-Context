@@ -56,7 +56,7 @@ The comparative analysis showed that **XGBoost yielded the highest overall class
 
 The **SHAP analysis** identified `airspeed_mean` as the most influential predictor, followed by `airspeed_std`, `tot_pressure_std`, and `altitude_std`. However, the effect of each predictor on class probability varied by class. For example, the **class-specific SHAP analysis** revealed higher mean airspeed (`airspeed_mean`) generally contributed positively to **Speed High** and **Flaps Late** predictions but negatively to **Nominal** predictions. Greater altitude variability (`altitude_std`), pitch-angle variability (`pitch_angle_std`), and flight-path deviations (`loc_dev_std` and `gl_slp_dev_mean`) were particularly influential in identifying **Path High** anomalies. For **Flaps Late**, higher mean airspeed and mean pitch angle (`pitch_angle_mean`) generally increased the class prediction scores, whereas higher airspeed variability (`airspeed_std`) contributed negatively.
 
-<img width="989" height="450" alt="SHAP Stacked Barplot" src="https://github.com/user-attachments/assets/75e5750f-4fd4-49fa-ba22-4d7e561247a2" />
+<img width="750" height="450" alt="SHAP Stacked Barplot" src="https://github.com/user-attachments/assets/75e5750f-4fd4-49fa-ba22-4d7e561247a2" />
 
 ---
 
