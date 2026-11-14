@@ -187,3 +187,68 @@ Raja, M.N.A., Abdoun, T. and El-Sekelly, W., 2026. Smart Ensemble Modeling for M
 Shaheed, M.S., Gkritza, K., Carriquiry, A.L. and Hallmark, S.L., 2016. Analysis of occupant injury severity in winter weather crashes: A fully Bayesian multivariate approach. Analytic methods in accident research, 11, pp.33-47.
 
 Zhang, T., Ning, Z., Fan, Y., Zidong, Z., Lei, J., Du, S. and He, S., 2026. Interpretable machine learning for multiclass trajectory prediction in cardiovascular-kidney-metabolic syndrome stage: development and external validation. Frontiers in Endocrinology, 17, p.1907821.
+
+---
+
+
+## **Getting Started: Reproducing the Analysis**
+
+The analysis was conducted using **Python** and the **NASA DASHlink Multi-Class Anomaly Classification Dataset**. The following steps outline how to reproduce the data preprocessing, feature engineering, model training, and evaluation procedures for the four flight classes: **Nominal, Speed High, Path High, and Flaps Late**.
+
+### **1. Requirements**
+
+The project uses Python and the following main libraries:
+
+- NumPy
+- Pandas
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- Imbalanced-learn
+- XGBoost
+- LightGBM
+- TensorFlow / Keras
+- SHAP
+- BorutaPy
+- Plotly
+- Airportsdata
+
+### **2. Dataset**
+
+The dataset is publicly available through the **[NASA DASHlink repository](https://c3.nasa.gov/dashlink/projects/85/)**.
+
+The analysis uses two primary input files:
+
+- `DASHlink_full_fourclass_raw_comp.npz` — Flight trajectory data and anomaly labels.
+- `DASHlink_full_fourclass_raw_meta.csv` — Flight metadata, including arrival airport and runway information.
+
+The dataset contains **99,837 flights**, each consisting of approximately **160 time-stamped observations** during the approach-to-landing phase.
+
+Download the required files and place them in the working directory.
+
+### **3. Running the Analysis**
+
+1. Download or clone this GitHub repository.
+2. Install the required Python libraries.
+3. Download the NASA DASHlink dataset and update the file paths in the Jupyter Notebook.
+4. Run the data preprocessing and feature engineering procedures, including:
+   - Aggregation of flight trajectories using mean and standard deviation.
+   - Encoding of arrival airport and runway information.
+   - Feature scaling and Boruta-based feature selection.
+5. Split the data into training and testing datasets.
+6. Develop and optimize four classification models:
+   - **Balanced Random Forest (BRF)**
+   - **XGBoost**
+   - **Light Gradient Boosting Machine (LightGBM)**
+   - **Artificial Neural Network (ANN)**
+7. Evaluate class imbalance handling strategies, including **class weighting, balanced sampling, and SMOTE resampling**, as applicable to each model.
+8. Evaluate model performance on the held-out test dataset.
+9. Conduct **global and class-specific SHAP analyses** to interpret the final XGBoost model.
+
+### **4. Model Evaluation and Interpretation**
+
+Model performance was evaluated using **macro-averaged Precision, Recall, F1-score, and Average Precision (AP)**, with **Macro F1-score** serving as the primary model-selection criterion due to class imbalance.
+
+Among the evaluated models, **XGBoost achieved the highest Macro F1-score (0.811)**, followed closely by **LightGBM and ANN (both 0.808)**. Balanced Random Forest achieved the highest Macro Recall (**0.850**).
+
+The final **XGBoost model** was interpreted using **SHAP (SHapley Additive exPlanations)** to identify influential predictors and examine their class-specific contributions. Particular attention was given to **airspeed characteristics, altitude variability, pitch-angle behavior, flight-path deviations, and arrival airport/runway context** in distinguishing among the four flight classes.
