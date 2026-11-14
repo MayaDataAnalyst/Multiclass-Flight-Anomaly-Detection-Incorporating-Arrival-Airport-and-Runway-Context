@@ -49,9 +49,18 @@ The training set was used for model development and hyperparameter tuning, while
 
 The comparative analysis showed that **XGBoost yielded the highest overall classification performance**, with a **Macro F1-score of 0.811**, closely followed by the **LightGBM** and **NN**, both with a Macro F1-score of **0.808**. **BRF** had lower Macro F1-scores of **0.570**, while it achieved the highest **Macro Recall (0.850)**, indicating greater sensitivity across the four flight classes.
 
+<img width="1189" height="590" alt="Model GOF Measures (Multiclass)" src="https://github.com/user-attachments/assets/c3072cdc-3d8d-4393-8e7f-17514d5441dd" />
+
+
 **XGBoost** was subsequently selected for **SHAP (SHapley Additive exPlanations) analysis** to evaluate the relative importance of the selected predictors and examine their contributions to model predictions across the four flight classes. Both global and class-specific SHAP analyses were conducted to assess the magnitude and direction of each feature's influence on the model output.
 
 The **SHAP analysis** identified `airspeed_mean` as the most influential predictor, followed by `airspeed_std`, `tot_pressure_std`, and `altitude_std`. However, the effect of each predictor on class probability varied by class. For example, the **class-specific SHAP analysis** revealed higher mean airspeed (`airspeed_mean`) generally contributed positively to **Speed High** and **Flaps Late** predictions but negatively to **Nominal** predictions. Greater altitude variability (`altitude_std`), pitch-angle variability (`pitch_angle_std`), and flight-path deviations (`loc_dev_std` and `gl_slp_dev_mean`) were particularly influential in identifying **Path High** anomalies. For **Flaps Late**, higher mean airspeed and mean pitch angle (`pitch_angle_mean`) generally increased the class prediction scores, whereas higher airspeed variability (`airspeed_std`) contributed negatively.
+
+<img width="989" height="390" alt="SHAP Stacked Barplot" src="https://github.com/user-attachments/assets/75e5750f-4fd4-49fa-ba22-4d7e561247a2" />
+
+---
+
+<img width="1453" height="1015" alt="SHAP Beeswarm Plot (Multiclass)" src="https://github.com/user-attachments/assets/186723b9-0442-4b79-a3c3-54d40ca9eef9" />
 
 ---
 
