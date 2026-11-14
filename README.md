@@ -14,6 +14,21 @@ Accordingly, this project pursued two primary objectives. The first was to **dev
 
 This project used the **NASA DASHlink Multi-Class Anomaly Classification Dataset**, publicly available through **[NASA DASHlink repository](https://c3.nasa.gov/dashlink/projects/85/)**. The dataset contains time-series flight trajectory data collected during the approach-to-landing phase, with flights categorized into four classes: **Nominal, Speed High, Path High, and Flaps Late**. Each flight consists of **160 time-step observations**, with each time step containing measurements of multiple flight parameters, such as airspeed, altitude, and other aircraft operational characteristics.
 
+### **Target Variable Distribution and Classification**
+
+| Class Index | Original Class | Count |
+|:-----------:|--------------------|------:|
+| 0 | Nominal | 89,663 |
+| 1 | Speed High | 7,013 |
+| 2 | Path High | 2,207 |
+| 3 | Flaps Late Setting | 954 |
+| **Total** | | **99,837** |
+
+<br>
+
+### **Reshaping Flight Data from a 3D Array into a 2D DataFrame:**
+<img width="800" height="500" alt="3D-to-2D Data Conversion" src="https://github.com/user-attachments/assets/51725313-d176-4285-8339-8c649409f06a" />
+
 Several statistical aggregation methods, including **mean and standard deviation, maximum, and median**, were evaluated to transform the time-step observations into flight-level features. Based on this comparison, **mean and standard deviation were selected** to represent the flight-level characteristics used in the classification models.
 Exploratory data analysis revealed a **substantial class imbalance**, with three anomalous flights together accounting for approximately **10%** of the total observations, indicating that the target variable was **imbalanced**.
 
