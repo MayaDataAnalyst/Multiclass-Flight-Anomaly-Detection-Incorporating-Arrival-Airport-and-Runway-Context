@@ -89,13 +89,14 @@ Collectively, these contributions support the development of a more **interpreta
 
 ### **Target Variable Distribution and Binary Classification**
 
-| Class Index | Original Class | Count | Binary Outcome |
-|:-----------:|--------------------|------:|----------------|
-| 0 | Nominal | 89,663 | Normal Class |
-| 1 | Speed High | 7,013 | Anomaly Class |
-| 2 | Path High | 2,207 | Anomaly Class |
-| 3 | Flaps Late Setting | 954 | Anomaly Class |
-| **Total** | | **99,837** | |
+| Class Index | Original Class | Count |
+|:-----------:|--------------------|------:|
+| 0 | Nominal | 89,663 |
+| 1 | Speed High | 7,013 |
+| 2 | Path High | 2,207 |
+| 3 | Flaps Late Setting | 954 |
+| **Total** | | **99,837** |
+
 
 ---
 ---
