@@ -155,3 +155,35 @@ It should be noted that the flap position (`flap_pos`) variable and its derived 
 ## **FLOWCHART OF THE MULTICLASS FLIGHT ANOMALY CLASSIFICATION FRAMEWORK**
 
 <img width="800" height="1100" alt="Flowchart of the Multiclass Anomaly Classification Framework" src="https://github.com/user-attachments/assets/b42fe63e-7929-420a-b7e0-37f929c649ac" />
+
+---
+
+## **RECOMMENDATIONS FOR FUTURE WORK**
+
+In the present study, approximately 160 time-stamped observations per flight were aggregated into flight-level features using the **mean and standard deviation**, potentially obscuring important temporal patterns and short-duration deviations. Future research could explore **unaggregated time-series data** using sequential deep-learning models, such as an **LSTM-based multiclass classifier** or an **LSTM autoencoder with a classification head**. Their performance could then be compared with the models developed here to determine whether capturing temporal dependencies improves the **detection and classification of flight anomalies**.
+
+A second direction for future research is to incorporate additional **airport-specific operational characteristics** into the prediction models, such as airport traffic volume, number of runways, runway configuration, and weather conditions. These factors may influence the likelihood and characteristics of flight anomalies. In addition, incorporating **aircraft-specific characteristics**, such as aircraft model, aircraft age, and engine type, may further improve model performance, as different aircraft types may exhibit different approach dynamics, deceleration behavior, and flap-deployment procedures.
+
+---
+
+## **REFERENCES**
+
+Campesato, O. (2023). Python 3 and Feature Engineering.
+
+Galli, S. (2020). Python feature engineering cookbook. Packt Publishing.
+
+Galli, S. (2021). Feature-engine: A Python package for feature engineering for machine learning. Journal of Open Source Software, 6(65), p.3642.
+
+Lee, H., Li, G., Rai, A. and Chattopadhyay, A., 2020. Real-time anomaly detection framework using a support vector regression for the safety monitoring of commercial aircraft. Advanced Engineering Informatics, 44, p.101071.
+
+Kim, M., Kho, S.Y. and Kim, D.K., 2017. Hierarchical ordered model for injury severity of pedestrian crashes in South Korea. Journal of safety research, 61, pp.33-40.
+
+Masís, S., 2021. Interpretable machine learning with Python (pp. 183-209). Birmingham, UK: Packt Publishing.
+
+Memarzadeh, M., Matthews, B. and Templin, T., 2022. Multiclass anomaly detection in flight data using semi-supervised explainable deep learning model. Journal of Aerospace Information Systems, 19(2), pp.83-97.
+
+Raja, M.N.A., Abdoun, T. and El-Sekelly, W., 2026. Smart Ensemble Modeling for Multiclass Lateral‑Spreading Prediction. Applied Soft Computing, p.115163.
+
+Shaheed, M.S., Gkritza, K., Carriquiry, A.L. and Hallmark, S.L., 2016. Analysis of occupant injury severity in winter weather crashes: A fully Bayesian multivariate approach. Analytic methods in accident research, 11, pp.33-47.
+
+Zhang, T., Ning, Z., Fan, Y., Zidong, Z., Lei, J., Du, S. and He, S., 2026. Interpretable machine learning for multiclass trajectory prediction in cardiovascular-kidney-metabolic syndrome stage: development and external validation. Frontiers in Endocrinology, 17, p.1907821.
