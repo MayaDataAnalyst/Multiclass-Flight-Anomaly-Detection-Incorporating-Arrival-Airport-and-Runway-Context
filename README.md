@@ -68,7 +68,7 @@ The **SHAP analysis** identified `airspeed_mean` as the most influential predict
 
 The primary contribution of this project is the incorporation of **arrival airport and runway information as contextual predictors** in a multiclass flight anomaly classification framework. Unlike previous similar projects that have primarily relied on flight-specific parameters, this study has integrated operational context to distinguish among four flight categories: **Nominal, Speed High, Path High, and Flaps Late**. The inclusion of these contextual features also improved predictive performance by approximately **12%**, highlighting their potential value for anomaly detection. **A similar improvement was observed in my earlier binary classification project**, where incorporating arrival airport and runway information enhanced the predictive performance of the classification models.
 
-<img width="1690" height="755" alt="Top Airports with Highest Anomaly Rates" src="https://github.com/user-attachments/assets/47b17aba-0c1e-43eb-b6b8-cef3472dd4eb" />
+<img width="1200" height="400" alt="Top Airports with Highest Anomaly Rates" src="https://github.com/user-attachments/assets/47b17aba-0c1e-43eb-b6b8-cef3472dd4eb" />
 
 ---
 
