@@ -66,7 +66,14 @@ The **SHAP analysis** identified `airspeed_mean` as the most influential predict
 
 **PROJECT CONTRIBUTIONS/MERIT:**
 
-The primary contribution of this project is the incorporation of **arrival airport and runway information as contextual predictors** in a multiclass flight anomaly classification framework. Unlike previous similar projects that have primarily relied on flight-specific parameters, this study has integrated operational context to distinguish among four flight categories: **Nominal, Speed High, Path High, and Flaps Late**. The inclusion of these contextual features also improved predictive performance by approximately **??%**, highlighting their potential value for anomaly detection. **A similar improvement was observed in my earlier binary classification project**, where incorporating arrival airport and runway information enhanced the predictive performance of the classification models.
+The primary contribution of this project is the incorporation of **arrival airport and runway information as contextual predictors** in a multiclass flight anomaly classification framework. Unlike previous similar projects that have primarily relied on flight-specific parameters, this study has integrated operational context to distinguish among four flight categories: **Nominal, Speed High, Path High, and Flaps Late**. The inclusion of these contextual features also improved predictive performance by approximately **12%**, highlighting their potential value for anomaly detection. **A similar improvement was observed in my earlier binary classification project**, where incorporating arrival airport and runway information enhanced the predictive performance of the classification models.
+
+<img width="1690" height="755" alt="Top Airports with Highest Anomaly Rates" src="https://github.com/user-attachments/assets/47b17aba-0c1e-43eb-b6b8-cef3472dd4eb" />
+
+---
+
+<img width="1082" height="754" alt="Map" src="https://github.com/user-attachments/assets/8492890d-29e3-44ee-bb88-6c09ce206ecf" />
+
 
 Another key contribution of this project is the development of a **multiclass flight anomaly classification framework**, extending beyond the binary classification approaches commonly employed in previous studies, where different anomaly types have often been grouped into a single category. Rather than grouping the target variable into nominal and anomalous flights, this study enables the identification of **three distinct anomaly types: Speed High, Path High, and Flaps Late**, alongside the Nominal class. Furthermore, the project provides a **systematic comparative evaluation of four machine learning algorithms and class imbalance-handling strategies** within a multiclass classification framework.
 
