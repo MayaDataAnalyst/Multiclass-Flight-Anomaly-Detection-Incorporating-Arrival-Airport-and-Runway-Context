@@ -56,7 +56,7 @@ The comparative analysis showed that **XGBoost yielded the highest overall class
 
 The **SHAP analysis** identified `airspeed_mean` as the most influential predictor, followed by `airspeed_std`, `tot_pressure_std`, and `altitude_std`. However, the effect of each predictor on class probability varied by class. For example, the **class-specific SHAP analysis** revealed higher mean airspeed (`airspeed_mean`) generally contributed positively to **Speed High** and **Flaps Late** predictions but negatively to **Nominal** predictions. Greater altitude variability (`altitude_std`), pitch-angle variability (`pitch_angle_std`), and flight-path deviations (`loc_dev_std` and `gl_slp_dev_mean`) were particularly influential in identifying **Path High** anomalies. For **Flaps Late**, higher mean airspeed and mean pitch angle (`pitch_angle_mean`) generally increased the class prediction scores, whereas higher airspeed variability (`airspeed_std`) contributed negatively.
 
-<img width="750" height="450" alt="SHAP Stacked Barplot" src="https://github.com/user-attachments/assets/75e5750f-4fd4-49fa-ba22-4d7e561247a2" />
+<img width="989" height="390" alt="SHAP Stacked Barplot" src="https://github.com/user-attachments/assets/77ac5100-9495-4542-ae96-4cd2d628a977" />
 
 ---
 
@@ -68,7 +68,7 @@ The **SHAP analysis** identified `airspeed_mean` as the most influential predict
 
 The primary contribution of this project is the incorporation of **arrival airport and runway information as contextual predictors** in a multiclass flight anomaly classification framework. Unlike previous similar projects that have primarily relied on flight-specific parameters, this study has integrated operational context to distinguish among four flight categories: **Nominal, Speed High, Path High, and Flaps Late**. The inclusion of these contextual features also improved predictive performance by approximately **12%**, highlighting their potential value for anomaly detection. **A similar improvement was observed in my earlier binary classification project**, where incorporating arrival airport and runway information enhanced the predictive performance of the classification models.
 
-<img width="1200" height="400" alt="Top Airports with Highest Anomaly Rates" src="https://github.com/user-attachments/assets/47b17aba-0c1e-43eb-b6b8-cef3472dd4eb" />
+<img width="1690" height="755" alt="Top Airports with Highest Anomaly Rates" src="https://github.com/user-attachments/assets/b69dbd24-e68a-443e-9925-9cea191a2a6a" />
 
 ---
 
