@@ -149,3 +149,8 @@ It should be noted that the flap position (`flap_pos`) variable and its derived 
 | arrival_airport | Arrival airport associated with the flight |
 | arrival_runway | Runway used or assigned for the aircraft's arrival |  
 
+---
+
+# **FLOWCHART OF THE MULTICLASS FLIGHT ANOMALY CLASSIFICATION FRAMEWORK**
+
+<img width="1122" height="1402" alt="Flowchart of the Multiclass Anomaly Classification Framework" src="https://github.com/user-attachments/assets/b42fe63e-7929-420a-b7e0-37f929c649ac" />
