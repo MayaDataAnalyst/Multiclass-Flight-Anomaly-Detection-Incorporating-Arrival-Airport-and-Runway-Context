@@ -154,7 +154,7 @@ It should be noted that the flap position (`flap_pos`) variable and its derived 
 
 ## **FLOWCHART OF THE MULTICLASS FLIGHT ANOMALY CLASSIFICATION FRAMEWORK**
 
-<img width="800" height="1100" alt="Flowchart of the Multiclass Anomaly Classification Framework" src="https://github.com/user-attachments/assets/b42fe63e-7929-420a-b7e0-37f929c649ac" />
+<img width="1135" height="1386" alt="Flowchart of the Multiclass Anomaly Classification Framework" src="https://github.com/user-attachments/assets/317d8bb3-f654-43fc-899f-08fe57f9dbbe" />
 
 ---
 
